@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega Valle del Malbec</title>
+
+    <!-- Meta para mejorar SEO -->
+    <meta name="description" content="Bodega Valle del Malbec, Valle de Uco, Mendoza">
+    <meta name="keywords" content="Bodega Mendoza Vino Malbec Tinto Blanco Cuyo Finca Restaurant Viñedo Valle de Uco">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Link Logo -->
+    <link rel="icon" type="image/svg+xml" href="../assets/img/LogoValleDelMalbec.svg"/>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="../index.html">
+                <img class="nav__logo" src="../assets/img/LogoValleDelMalbec.svg" alt="Valle del Malbec">
+            </a>
+            <ul class="nav__links">
+                <a class="nav__link" href="../index.html">
+                    Inicio
+                </a>
+                <a class="nav__link" href="./nosotros.html">
+                    Nuestra Historia
+                </a>
+                <a class="nav__link" href="./fincas.html">
+                    Fincas
+                </a>
+                <a class="nav__link" href="./vinos.html">
+                    Vinos
+                </a>
+            </ul>
+            <button class="nav__iconoMenu">
+                <img src="../assets/img/MenuIcon.svg" alt="Icono Menú Hamburguesa">
+            </button>
+        </nav>
+        <div class="header__contact">
+            <h1>
+                Visitanos
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quis possimus rerum recusandae nesciunt, ipsam quia facilis harum, ab eligendi saepe hic eius voluptates.</p>
+        </div>
+    </header>
+    <main class="contenedor contact">
+        <section class="contact__map">
+            <h2>
+                <img src="../assets/img/Iconos/LogoMap.svg" alt="Logo Map">
+                Encontranos en:
+            </h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.057595953526!2d-69.03077862328367!3d-33.57785380552398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967c25c8213c8b07%3A0xf1c5b7b7496f61c1!2sValle%20de%20Uco!5e0!3m2!1ses!2sar!4v1729549661426!5m2!1ses!2sar" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>
+                <img src="../assets/img/Iconos/LogoMail.svg" alt="Logo Email">
+                +54 2615 223344
+            </p>
+            <p>
+                <img src="../assets/img/Iconos/LogoCall.svg" alt="Logo Llamada">
+                bodega@valledelmalbec.com
+            </p>
+        </section>
+        <section class="contact__form">
+            <h2>
+                Dejanos tus datos y mensaje si tenes alguna duda:
+            </h2>
+            <form class="contact__form__campos" action="/base-de-datos" method="POST">
+                <input type="text" placeholder="Nombre y Apellido">
+                <input type="email" placeholder="Correo">
+                <input type="number" placeholder="Celular">
+                <textarea id="mensaje" placeholder="Mensaje"></textarea>
+                <input class="contact__form__submit" type="submit" placeholder="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__seccion">
+            <a href="../index.html">
+                <img class="nav__logo" src="../assets/img/LogoValleDelMalbec.svg" alt="Valle del Malbec">
+            </a>
+            <p class="footer__texts">Valle del Malbec</p>
+            <p class="footer__texts">Lujan de Cuyo | 2024</p>
+        </section>
+        <section class="footer__seccion">
+            <h3 class="footer__titles">
+                Redes:
+            </h3>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img class="footer__logo" src="../assets/img/Iconos/LogoWhatsApp.svg" alt="Logo WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer__logo" src="../assets/img/Iconos/LogoInstagram.svg" alt="Logo Instagram">
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img class="footer__logo" src="../assets/img/Iconos/LogoLinkedin.svg" alt="Logo LinkedIn">
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
