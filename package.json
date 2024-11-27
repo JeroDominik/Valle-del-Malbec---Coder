@@ -4,12 +4,16 @@
   "description": "Pagina creada con fines educativos, siguiendo el curso de Desarrollo Web en CoderHouse",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",
     "url": "github.com/JeroDominik/ValleDelMalbec_Coder"
   },
   "author": "Jero Dominik",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
 }
