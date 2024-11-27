@@ -1,0 +1,15 @@
+{
+  "name": "bodega-valle-del-malbec",
+  "version": "1.0.0",
+  "description": "Pagina creada con fines educativos, siguiendo el curso de Desarrollo Web en CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/JeroDominik/ValleDelMalbec_Coder"
+  },
+  "author": "Jero Dominik",
+  "license": "ISC"
+}
