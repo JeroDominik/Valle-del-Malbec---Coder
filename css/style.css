@@ -1,3 +1,209 @@
+/* GLOBALES */
+body {
+  background-color: rgb(12, 16, 24);
+  color: rgb(226, 237, 252);
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/img/BodegaValleDelMalbec.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  margin-bottom: 24px;
+  opacity: 80%;
+}
+.header .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 6px 20px;
+}
+.header .header__nav a .nav__logo {
+  width: 100px;
+  height: 80px;
+}
+.header .header__nav .nav__iconoMenu {
+  border: none;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+}
+.header .header__nav .nav__iconoMenu img {
+  width: 100%;
+}
+.header .header__nav .nav__links {
+  display: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header .header__nav .nav__links .nav__link {
+  color: #b99e84;
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  .header .header__nav .nav__links {
+    display: flex;
+  }
+  .header .header__nav .nav__iconoMenu {
+    display: none;
+  }
+}
+.header .header__title {
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 20px;
+  background-color: rgb(99, 116, 145);
+  gap: 20px;
+  text-align: center;
+}
+.footer section a .nav__logo {
+  width: 100px;
+  height: 80px;
+}
+.footer section .footer__titles {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.footer section .footer__texts {
+  margin: 10px 0;
+}
+.footer section a .footer__logo {
+  width: 50px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__texts {
+    text-align: start;
+  }
+}
+/* MAIN */
+.seccion {
+  margin: 100px auto;
+  display: grid;
+  justify-items: center;
+}
+.seccion .seccion__info {
+  background-color: rgb(99, 116, 145);
+  padding: 15px 25px;
+  text-align: center;
+}
+.seccion .seccion__info .seccion__info__button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10%;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: rgb(12, 16, 24);
+}
+.seccion .seccion__info .seccion__info__button:hover {
+  cursor: pointer;
+}
+.seccion .seccion__info .seccion__info__button a {
+  color: rgb(226, 237, 252);
+}
+.seccion .seccion__img {
+  height: 400px;
+  width: 90%;
+}
+.seccion .info__comienzos, .seccion .info__fincas, .seccion .info__vinos {
+  position: relative;
+  top: 10px;
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .seccion {
+    grid-template-columns: 45% 55%;
+  }
+  .seccion .seccion__img {
+    width: 100%;
+  }
+  .seccion .info__comienzos {
+    order: 1;
+    position: relative;
+    top: 20px;
+    right: 15px;
+  }
+  .seccion .info__fincas {
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+  }
+  .seccion .info__vinos {
+    order: 1;
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

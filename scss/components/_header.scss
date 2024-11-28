@@ -1,0 +1,60 @@
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/BodegaValleDelMalbec.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin-bottom: 24px;
+    opacity: 80%;
+
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 6px 20px;
+
+        a {
+            .nav__logo {
+                width: 100px;
+                height: 80px;
+            }
+        }
+
+        .nav__iconoMenu {
+            border: none;
+            width: 60px;
+            height: 60px;
+            background-color: transparent;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .nav__links {
+            display: none;
+            font-size: 20px;
+            font-weight: 600;
+            .nav__link {
+                color: #b99e84;
+                padding: 0 10px;
+            }
+        }
+        @media (min-width: 768px) {
+            .nav__links {
+                display: flex;
+            }
+            .nav__iconoMenu {
+                display: none;
+            }
+        }
+    }
+    .header__title {
+        text-align: center;
+        color: white;
+        margin-top: 150px;
+    }
+}

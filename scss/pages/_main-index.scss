@@ -1,0 +1,61 @@
+/* MAIN */
+.seccion {
+    margin: 100px auto;
+    display: grid;
+    justify-items: center;
+    .seccion__info {
+        background-color: rgb(99, 116, 145);
+        padding: 15px 25px;
+        text-align: center;
+
+        .seccion__info__button {
+            margin: 10px 0;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10%;
+            font-weight: 700;
+            font-size: 20px;
+            background-color: rgb(12, 16, 24);
+            &:hover {
+                cursor: pointer;
+            }
+            a {
+                color: rgb(226, 237, 252);
+            }
+        }
+    }
+    .seccion__img {
+        height: 400px;
+        width: 90%;
+    }
+    .info__comienzos, .info__fincas, .info__vinos {
+        position: relative;
+        top: 10px;
+        order: -1;
+    }
+}
+@media (min-width: 768px) {
+    .seccion {
+        grid-template-columns: 45% 55%;
+        .seccion__img {
+            width: 100%;
+        }
+        .info__comienzos {
+            order: 1;
+            position: relative;
+            top: 20px;
+            right: 15px;
+        }
+        .info__fincas {
+            position: relative;
+            bottom: 20px;
+            left: 15px;
+        }
+        .info__vinos {
+            order:1;
+            position: relative;
+            bottom: 20px;
+            right: 15px;
+        }
+    }
+}
