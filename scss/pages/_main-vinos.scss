@@ -1,0 +1,40 @@
+/* VINOS */
+.vinos {
+    text-align: center;
+    h2 {
+        margin-bottom: 0;
+    }
+    p {
+        margin: 10px 0 50px 0;
+    }
+    .vinos__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        margin: 30px 0 50px 0;
+        .vinos__card {
+            width: auto;
+            height: auto;
+            background-color: rgb(99, 116, 145);
+            border-radius: 10px;
+
+            img {
+                max-height: 400px;
+                width: 100%;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .vinos__cards {
+            flex-direction: row;
+            .vinos__card {
+                height: 600px;
+    
+                img {
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

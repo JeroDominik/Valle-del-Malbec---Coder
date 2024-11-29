@@ -1,0 +1,49 @@
+/* NOSOTROS */
+.seccion__nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+
+    &:last-of-type {
+        margin-bottom: 100px;
+    }
+    &:first-of-type {
+        margin-top: 100px;
+    }
+    .seccion__img__nosotros {
+        width: 100%;
+        height: 300px;
+    }
+    .seccion__info__nosotros {
+        max-width: 600px;
+        background-color: rgb(99, 116, 145);
+        padding: 15px 25px ;
+        border: 3px solid rgba(51, 63, 82, 0.993);
+        text-align: center;
+    }
+    .border__none {
+        border: 3px solid rgba(51, 63, 82, 0.993);
+    }
+    .changeOrder {
+        order: -1;
+    }
+}
+
+@media (min-width: 768px) {
+    .seccion__nosotros {
+        flex-direction: row;
+        height: 400px;
+
+        .seccion__img__nosotros {
+            width: 40%;
+            height: auto;
+        }
+        .border__none {
+            border: none;
+        }
+        .changeOrder {
+            order: 1;
+        }
+    }
+}
