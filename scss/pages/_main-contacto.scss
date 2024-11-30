@@ -1,0 +1,95 @@
+/* CONTACTO HEADER TITLE */
+.header__contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 80%;
+    margin: 130px auto 0 auto;
+
+    p {
+        font-weight: 700;
+    }
+}
+@media (min-width: 768px) {
+    .header__contact {
+        flex-direction: row;
+        gap: 100px;
+        margin: 150px auto 0 auto;
+    }
+}
+/* FORM */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 60px auto;
+    .contact__map__info {
+        h2, p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 {
+            margin: 30px 0;
+            gap: 10px;
+        }
+    }
+
+    .contact__form__title {
+        margin: 20px 0;
+    }
+    .contact__form__campos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 30px;
+
+        input, 
+        textarea {
+            padding: 10px 5px;
+            background-color: transparent;
+            font-size: 15px;
+            font-style: italic;
+            border: none;
+            color: rgb(99, 116, 145);
+            border-bottom: 2px solid rgb(55, 61, 70);
+            outline: none;
+        }
+        textarea {
+            align-content: end;
+            resize: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .contact__form__submit {
+            border: 3px solid rgb(55, 61, 70);
+            border-radius: 5px;
+            cursor: pointer;
+            width: 40%;
+            font-weight: 700;
+            &:hover {
+                background-color: rgb(99, 116, 145);
+                color: rgb(40, 43, 49);
+                transition: 300ms;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .contact {
+        flex-direction: row;
+        align-items: stretch;
+        .contact__map__info {
+            h2, p {
+                display: flex;
+                justify-content: start;
+            }
+            h2 {
+                margin: 20px 0 80px 0; 
+            }
+        }
+    }
+}
