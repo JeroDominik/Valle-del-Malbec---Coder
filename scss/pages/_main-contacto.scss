@@ -1,3 +1,5 @@
+@import "../globals/variables-utilidades";
+
 /* CONTACTO HEADER TITLE */
 .header__contact {
     color: white;
@@ -54,6 +56,7 @@
             background-color: transparent;
             font-size: 15px;
             font-style: italic;
+            font-weight: 600;
             border: none;
             color: rgb(99, 116, 145);
             border-bottom: 2px solid rgb(55, 61, 70);
@@ -62,14 +65,13 @@
         textarea {
             align-content: end;
             resize: none;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: $fuenteTexto;
         }
         .contact__form__submit {
             border: 3px solid rgb(55, 61, 70);
             border-radius: 5px;
             cursor: pointer;
             width: 40%;
-            font-weight: 700;
             &:hover {
                 background-color: rgb(99, 116, 145);
                 color: rgb(40, 43, 49);

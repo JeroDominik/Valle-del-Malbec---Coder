@@ -1,7 +1,7 @@
+@import "../globals/variables-utilidades";
+
 /* HEADER */
 .header {
-    display: flex;
-    flex-direction: column;
     background-image: url(../assets/img/BodegaValleDelMalbec.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     height: 100vh;
     margin-bottom: 24px;
     opacity: 80%;
-
+    
     .header__nav {
         display: flex;
         justify-content: space-between;
@@ -22,7 +22,6 @@
                 height: 80px;
             }
         }
-
         .nav__iconoMenu {
             border: none;
             width: 60px;
@@ -33,13 +32,12 @@
                 width: 100%;
             }
         }
-
         .nav__links {
             display: none;
             font-size: 20px;
             font-weight: 600;
             .nav__link {
-                color: #b99e84;
+                color: $ColorNavLinks;
                 padding: 0 10px;
             }
         }

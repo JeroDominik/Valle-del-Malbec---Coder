@@ -1,3 +1,5 @@
+@import "../globals/variables-utilidades";
+
 /* VINOS */
 .vinos {
     text-align: center;
@@ -16,7 +18,7 @@
         .vinos__card {
             width: auto;
             height: auto;
-            background-color: rgb(99, 116, 145);
+            background-color: $colorBgSecundario;
             border-radius: 10px;
 
             img {

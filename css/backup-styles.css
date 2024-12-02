@@ -51,8 +51,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* INDEX */
 /* HEADER */
 .header {
-    display: flex;
-    flex-direction: column;
     background-image: url(../assets/img/BodegaValleDelMalbec.webp);
     background-size: cover;
     background-repeat: no-repeat;

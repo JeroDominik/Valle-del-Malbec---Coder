@@ -1,6 +1,5 @@
 /* FINCAS */
 .contenedor__fincas {
-    max-width: 1200px;
     width: 100%;
     margin: 50px auto;
     .fincaImg__heigth {
@@ -11,7 +10,7 @@
 
 @media (min-width: 768px) {
     .contenedor__fincas {
-        width: 65%;
+        width: 60%;
         margin: 120px auto;
         .fincaImg__heigth {
             height: auto;
