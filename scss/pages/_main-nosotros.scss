@@ -2,8 +2,7 @@
 
 /* NOSOTROS */
 .seccion__nosotros {
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     justify-content: center;
     height: auto;
 

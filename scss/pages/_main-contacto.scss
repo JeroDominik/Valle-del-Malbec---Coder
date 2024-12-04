@@ -2,9 +2,8 @@
 
 /* CONTACTO HEADER TITLE */
 .header__contact {
+    @extend .flex-column;
     color: white;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0;
@@ -24,8 +23,7 @@
 }
 /* FORM */
 .contact {
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     align-items: center;
     gap: 40px;
     margin: 60px auto;
@@ -45,8 +43,7 @@
         margin: 20px 0;
     }
     .contact__form__campos {
-        display: flex;
-        flex-direction: column;
+        @extend .flex-column;
         row-gap: 20px;
         margin-top: 30px;
 
@@ -70,12 +67,12 @@
         .contact__form__submit {
             border: 3px solid rgb(55, 61, 70);
             border-radius: 5px;
-            cursor: pointer;
             width: 40%;
             &:hover {
                 background-color: rgb(99, 116, 145);
                 color: rgb(40, 43, 49);
                 transition: 300ms;
+                cursor: pointer;
             }
         }
     }
