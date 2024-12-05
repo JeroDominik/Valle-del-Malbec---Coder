@@ -9,7 +9,6 @@
     height: 100vh;
     margin-bottom: 24px;
     opacity: 80%;
-    
     .header__nav {
         display: flex;
         justify-content: space-between;
@@ -18,7 +17,7 @@
 
         a {
             .nav__logo {
-                @include tamaño-img(100px, 80px)
+                @include tamaño-img(100px, 80px);
             }
         }
         .nav__iconoMenu {
@@ -28,17 +27,36 @@
 
             img {
                 width: 100%;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
         .nav__links {
             display: none;
+            gap: 20px;
+            position: relative;
             @include font-estilos(20px, 600);
             .nav__link {
                 color: $ColorNavLinks;
-                padding: 0 10px;
+                position: relative;
+                transition: color 0.3s ease;
                 &:hover {
-                    transform: translateY(15px) scale(1.1);
-                    transition: 500ms ease-in;
+                    color: rgb(153, 120, 86);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -4px; /* Espaciado debajo del texto */
+                    left: 50%;
+                    width: 0;
+                    height: 2px;
+                    background-color: rgb(153, 120, 86); /* Color de la línea */
+                    transition: width 0.3s ease, left 0.3s ease;
+                }
+                &:hover::before {
+                    width: 100%;
+                    left: 0;
                 }
             }
         }

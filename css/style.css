@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -98,18 +99,37 @@ input[type=number]::-webkit-inner-spin-button {
 .header .header__nav .nav__iconoMenu img {
   width: 100%;
 }
+.header .header__nav .nav__iconoMenu img:hover {
+  cursor: pointer;
+}
 .header .header__nav .nav__links {
   display: none;
+  gap: 20px;
+  position: relative;
   font-size: 20px;
   font-weight: 600;
 }
 .header .header__nav .nav__links .nav__link {
   color: rgb(185, 158, 132);
-  padding: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 .header .header__nav .nav__links .nav__link:hover {
-  transform: translateY(15px) scale(1.1);
-  transition: 500ms ease-in;
+  color: rgb(153, 120, 86);
+}
+.header .header__nav .nav__links .nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Espaciado debajo del texto */
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(153, 120, 86); /* Color de la línea */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+.header .header__nav .nav__links .nav__link:hover::before {
+  width: 100%;
+  left: 0;
 }
 @media (min-width: 768px) {
   .header .header__nav .nav__links {
