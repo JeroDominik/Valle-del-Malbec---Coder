@@ -15,9 +15,8 @@
             padding: 12px 15px;
             border: none;
             border-radius: 10%;
-            font-weight: 700;
-            font-size: 18px;
             background-color: rgb(12, 16, 24);
+            @include font-estilos(18px, 700);
             &:hover {
                 cursor: pointer;
                 transform: scale(1.05);
@@ -29,8 +28,7 @@
         }
     }
     .seccion__img {
-        height: 400px;
-        width: 90%;
+        @include tamaño-img(90%, 400px)
     }
     .info__comienzos, .info__fincas, .info__vinos {
         position: relative;

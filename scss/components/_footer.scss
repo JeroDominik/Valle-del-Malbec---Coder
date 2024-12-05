@@ -13,8 +13,7 @@
     section {
         a {
             .nav__logo {
-                width: 100px;
-                height: 80px;
+                @include tamaño-img(100px, 80px)
             }
         }
         .footer__titles {

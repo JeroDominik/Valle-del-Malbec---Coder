@@ -7,13 +7,21 @@ $ColorNavLinks: rgb(185, 158, 132);
 $colorBgPrincipal:  rgb(12, 16, 24);
 $colorBgSecundario: rgb(99, 116, 145);
 
-@mixin contenedor-styles($max-width, $width, $margin) {  //  Aplicados en "globales.scss" y "_main-fincas.scss"
+@mixin contenedor-styles($max-width, $width, $margin) {  // Aplicados en "globales.scss" y "_main-fincas.scss"
     max-width: $max-width;
     width: $width;
     margin: $margin;
 }
+@mixin font-estilos ($font-size, $font-weight) {     // Aplicados en "globales.scss", "_header.scss" y "_main-index.scss"
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+@mixin tamaño-img ($width, $height) {        // Aplicado en "_header.scss", "_footer.scss", "_main-index.scss",
+    width: $width;                           // "_main-nosotros.scss" y "_main-vinos.scss"
+    height: $height;
+}
 
-.flex-column {                 //Aplicados en casi todos los "_mains.scss" como 'extend'
+.flex-column {                 // Aplicados en casi todos los "_mains.scss" como 'extend'
     display: flex;
     flex-direction: column;
 }

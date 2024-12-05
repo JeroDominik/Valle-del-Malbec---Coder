@@ -15,8 +15,7 @@
         width: auto;
         margin: 30px 0 50px 0;
         .vinos__card {
-            width: auto;
-            height: auto;
+            @include tamaño-img(auto, auto);
             background-color: $colorBgSecundario;
             border-radius: 10px;
 

@@ -16,16 +16,13 @@ h1, h2, h3, h4 {
     font-family: $fuenteTitulo;
 }
 h1 {
-    font-size: 40px;
-    font-weight: 900;
+    @include font-estilos(40px, 900)
 }
 h2 {
-    font-size: 32px;
-    font-weight: 700;
+    @include font-estilos(32px, 700)
 }
 h3 {
-    font-size: 24px;
-    font-weight: 600;
+    @include font-estilos (24px, 600)
 }
 @media (min-width: 768px) {
     h1 {

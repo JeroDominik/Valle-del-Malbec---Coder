@@ -13,8 +13,7 @@
         margin-bottom: 100px;
     }
     .seccion__img__nosotros {
-        width: 100%;
-        height: 300px;
+        @include tamaño-img(100%, 300px)
     }
     .seccion__info__nosotros {
         max-width: 600px;
@@ -33,8 +32,7 @@
         flex-direction: row;
         height: 400px;
         .seccion__img__nosotros {
-            width: 40%;
-            height: auto;
+            @include tamaño-img(40%, auto)
         }
         .border__none {
             border: none;

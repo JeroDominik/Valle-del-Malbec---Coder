@@ -18,14 +18,12 @@
 
         a {
             .nav__logo {
-                width: 100px;
-                height: 80px;
+                @include tamaño-img(100px, 80px)
             }
         }
         .nav__iconoMenu {
+            @include tamaño-img(60px, 60px);
             border: none;
-            width: 60px;
-            height: 60px;
             background-color: transparent;
 
             img {
@@ -34,11 +32,14 @@
         }
         .nav__links {
             display: none;
-            font-size: 20px;
-            font-weight: 600;
+            @include font-estilos(20px, 600);
             .nav__link {
                 color: $ColorNavLinks;
                 padding: 0 10px;
+                &:hover {
+                    transform: translateY(15px) scale(1.1);
+                    transition: 500ms ease-in;
+                }
             }
         }
         @media (min-width: 768px) {
