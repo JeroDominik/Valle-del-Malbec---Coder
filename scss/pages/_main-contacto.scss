@@ -68,10 +68,10 @@
             border: 3px solid rgb(55, 61, 70);
             border-radius: 5px;
             width: 40%;
+            transition: 300ms;
             &:hover {
                 background-color: rgb(99, 116, 145);
                 color: rgb(40, 43, 49);
-                transition: 300ms;
                 cursor: pointer;
             }
         }
