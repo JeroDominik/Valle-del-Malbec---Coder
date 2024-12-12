@@ -1,19 +1,19 @@
 @import "../globals/variables-utilidades";
 
 /* FINCAS */
-.contenedor__fincas {
+.contenedor__bodegas {
     @include contenedor-styles(1200px, 100%, 50px auto);
-    .fincaImg__heigth {
+    .bodegaImg__heigth {
         height: 400px;
         border-radius: 10px;
     }
 }
 
 @media (min-width: 768px) {
-    .contenedor__fincas {
+    .contenedor__bodegas {
         width: 60%;
         margin: 120px auto;
-        .fincaImg__heigth {
+        .bodegaImg__heigth {
             height: auto;
         }
     }

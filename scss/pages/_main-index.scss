@@ -30,7 +30,7 @@
     .seccion__img {
         @include tamaño-img(90%, 400px)
     }
-    .info__comienzos, .info__fincas, .info__vinos {
+    .info__comienzos, .info__bodegas, .info__vinos {
         position: relative;
         top: 10px;
         order: -1;
@@ -48,7 +48,7 @@
             top: 20px;
             right: 15px;
         }
-        .info__fincas {
+        .info__bodegas {
             position: relative;
             bottom: 20px;
             left: 15px;

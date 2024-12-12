@@ -7,7 +7,7 @@ $ColorNavLinks: rgb(185, 158, 132);
 $colorBgPrincipal:  rgb(12, 16, 24);
 $colorBgSecundario: rgb(99, 116, 145);
 
-@mixin contenedor-styles($max-width, $width, $margin) {  // Aplicados en "globales.scss" y "_main-fincas.scss"
+@mixin contenedor-styles($max-width, $width, $margin) {  // Aplicados en "globales.scss" y "_main-bodegas.scss"
     max-width: $max-width;
     width: $width;
     margin: $margin;

@@ -220,7 +220,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 90%;
   height: 400px;
 }
-.seccion .info__comienzos, .seccion .info__fincas, .seccion .info__vinos {
+.seccion .info__comienzos, .seccion .info__bodegas, .seccion .info__vinos {
   position: relative;
   top: 10px;
   order: -1;
@@ -239,7 +239,7 @@ input[type=number]::-webkit-inner-spin-button {
     top: 20px;
     right: 15px;
   }
-  .seccion .info__fincas {
+  .seccion .info__bodegas {
     position: relative;
     bottom: 20px;
     left: 15px;
@@ -304,22 +304,22 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 /* FINCAS */
-.contenedor__fincas {
+.contenedor__bodegas {
   max-width: 1200px;
   width: 100%;
   margin: 50px auto;
 }
-.contenedor__fincas .fincaImg__heigth {
+.contenedor__bodegas .bodegaImg__heigth {
   height: 400px;
   border-radius: 10px;
 }
 
 @media (min-width: 768px) {
-  .contenedor__fincas {
+  .contenedor__bodegas {
     width: 60%;
     margin: 120px auto;
   }
-  .contenedor__fincas .fincaImg__heigth {
+  .contenedor__bodegas .bodegaImg__heigth {
     height: auto;
   }
 }
@@ -333,35 +333,40 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: center;
 }
 .vinos h2 {
-  margin-bottom: 0;
+  margin: 80px 0 0;
 }
 .vinos p {
   margin: 10px 0 50px 0;
 }
 .vinos .vinos__cards {
-  gap: 20px;
+  gap: 40px;
   width: auto;
-  margin: 30px 0 50px 0;
+  margin: 20px 0 50px;
 }
 .vinos .vinos__cards .vinos__card {
-  width: auto;
+  width: 90%;
   height: auto;
   background-color: rgb(99, 116, 145);
   border-radius: 10px;
+  margin: 0 auto;
 }
 .vinos .vinos__cards .vinos__card img {
   max-height: 400px;
   width: 100%;
 }
+.vinos .vinos__cards .vinos__card p {
+  margin: 10px 10px 20px;
+}
+.vinos .vinos__cards:last-of-type {
+  margin-bottom: 80px;
+}
 @media (min-width: 768px) {
   .vinos .vinos__cards {
     flex-direction: row;
-  }
-  .vinos .vinos__cards .vinos__card {
-    height: 600px;
+    gap: 30px;
   }
   .vinos .vinos__cards .vinos__card img {
-    height: 50%;
+    max-height: 50%;
   }
 }
 
