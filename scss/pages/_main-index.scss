@@ -17,10 +17,10 @@
             border-radius: 10%;
             background-color: rgb(12, 16, 24);
             @include font-estilos(18px, 700);
+            transition: 300ms;
             &:hover {
                 cursor: pointer;
                 transform: scale(1.05);
-                transition: 300ms;
             }
             a {
                 color: rgb(226, 237, 252);
