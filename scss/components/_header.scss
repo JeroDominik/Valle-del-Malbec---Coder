@@ -10,39 +10,41 @@
     margin-bottom: 24px;
     opacity: 80%;
     .header__nav {
-        display: flex;
-        justify-content: space-between;
         align-items: end;
-        padding: 6px 20px;
-
+        padding: 0;
         a {
             .nav__logo {
                 @include tamaño-img(100px, 80px);
+                padding-left: 15px;
             }
         }
         .nav__iconoMenu {
-            @include tamaño-img(60px, 60px);
+            padding: 10px;
+            margin:0 10px 5px;
             border: none;
-            background-color: transparent;
-
-            img {
-                width: 100%;
-                &:hover {
-                    cursor: pointer;
-                }
+            transition: 150ms;
+            &:focus {
+                box-shadow: none;
+            }
+            &:hover {
+                background-color: rgba(221, 202, 184, 0.5);
+                border-radius: 40%;
+            }
+            span {
+                @include tamaño-img(40px, 40px);
             }
         }
         .nav__links {
-            display: none;
-            gap: 20px;
-            position: relative;
+            background-color: rgba(240, 219, 198, 0.5);
+            text-align: end;
+            padding: 0 15px 15px 0;
             @include font-estilos(20px, 600);
             .nav__link {
-                color: $ColorNavLinks;
                 position: relative;
                 transition: color 300ms ease;
-                &:hover {
-                    color: rgb(153, 120, 86);
+                
+                a {
+                    color: $ColorNavLinks;
                 }
                 &::before {
                     content: "";
@@ -52,26 +54,33 @@
                     width: 0;
                     height: 2px;
                     background-color: rgb(153, 120, 86);
-                    transition: width 300ms ease, left 0.3s ease;
+                    transition: width 300ms ease, left 300s ease;
                 }
                 &:hover::before {
-                    width: 100%;
+                    width: 50%;
                     left: 0;
                 }
             }
         }
         @media (min-width: 768px) {
             .nav__links {
-                display: flex;
-            }
-            .nav__iconoMenu {
-                display: none;
+                gap: 10px;
+                background-color: transparent;
+                padding-bottom: 0;
+                .nav__link {
+                    &::before {
+                        left: 0;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
     .header__title {
         text-align: center;
         color: white;
-        margin-top: 150px;
+        margin-top: 130px;
     }
 }

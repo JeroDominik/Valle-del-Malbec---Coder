@@ -80,41 +80,44 @@ input[type=number]::-webkit-inner-spin-button {
   opacity: 80%;
 }
 .header .header__nav {
-  display: flex;
-  justify-content: space-between;
   align-items: end;
-  padding: 6px 20px;
+  padding: 0;
 }
 .header .header__nav a .nav__logo {
   width: 100px;
   height: 80px;
+  padding-left: 15px;
 }
 .header .header__nav .nav__iconoMenu {
-  width: 60px;
-  height: 60px;
+  padding: 10px;
+  margin: 0 10px 5px;
   border: none;
-  background-color: transparent;
+  transition: 150ms;
 }
-.header .header__nav .nav__iconoMenu img {
-  width: 100%;
+.header .header__nav .nav__iconoMenu:focus {
+  box-shadow: none;
 }
-.header .header__nav .nav__iconoMenu img:hover {
-  cursor: pointer;
+.header .header__nav .nav__iconoMenu:hover {
+  background-color: rgba(221, 202, 184, 0.5);
+  border-radius: 40%;
+}
+.header .header__nav .nav__iconoMenu span {
+  width: 40px;
+  height: 40px;
 }
 .header .header__nav .nav__links {
-  display: none;
-  gap: 20px;
-  position: relative;
+  background-color: rgba(240, 219, 198, 0.5);
+  text-align: end;
+  padding: 0 15px 15px 0;
   font-size: 20px;
   font-weight: 600;
 }
 .header .header__nav .nav__links .nav__link {
-  color: rgb(185, 158, 132);
   position: relative;
   transition: color 300ms ease;
 }
-.header .header__nav .nav__links .nav__link:hover {
-  color: rgb(153, 120, 86);
+.header .header__nav .nav__links .nav__link a {
+  color: rgb(129, 101, 73);
 }
 .header .header__nav .nav__links .nav__link::before {
   content: "";
@@ -124,24 +127,29 @@ input[type=number]::-webkit-inner-spin-button {
   width: 0;
   height: 2px;
   background-color: rgb(153, 120, 86);
-  transition: width 300ms ease, left 0.3s ease;
+  transition: width 300ms ease, left 300s ease;
 }
 .header .header__nav .nav__links .nav__link:hover::before {
-  width: 100%;
+  width: 50%;
   left: 0;
 }
 @media (min-width: 768px) {
   .header .header__nav .nav__links {
-    display: flex;
+    gap: 10px;
+    background-color: transparent;
+    padding-bottom: 0;
   }
-  .header .header__nav .nav__iconoMenu {
-    display: none;
+  .header .header__nav .nav__links .nav__link::before {
+    left: 0;
+  }
+  .header .header__nav .nav__links .nav__link:hover::before {
+    width: 100%;
   }
 }
 .header .header__title {
   text-align: center;
   color: white;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .flex-column, .footer {
@@ -278,6 +286,9 @@ input[type=number]::-webkit-inner-spin-button {
   border: 3px solid rgba(51, 63, 82, 0.993);
   text-align: center;
 }
+.seccion__nosotros .seccion__info__nosotros h2 {
+  margin: 25px 0 15px;
+}
 .seccion__nosotros .changeOrder {
   order: -1;
 }
@@ -308,6 +319,7 @@ input[type=number]::-webkit-inner-spin-button {
   max-width: 1200px;
   width: 100%;
   margin: 50px auto;
+  margin: 150px auto;
 }
 .contenedor__bodegas .bodegaImg__heigth {
   height: 400px;
@@ -317,7 +329,6 @@ input[type=number]::-webkit-inner-spin-button {
 @media (min-width: 768px) {
   .contenedor__bodegas {
     width: 60%;
-    margin: 120px auto;
   }
   .contenedor__bodegas .bodegaImg__heigth {
     height: auto;
@@ -353,9 +364,10 @@ input[type=number]::-webkit-inner-spin-button {
 .vinos .vinos__cards .vinos__card img {
   max-height: 400px;
   width: 100%;
+  margin-bottom: 30px;
 }
 .vinos .vinos__cards .vinos__card p {
-  margin: 10px 10px 20px;
+  margin: 15px 10px 20px;
 }
 .vinos .vinos__cards:last-of-type {
   margin-bottom: 80px;
@@ -409,6 +421,9 @@ input[type=number]::-webkit-inner-spin-button {
 .contact .contact__map__info h2 {
   margin: 30px 0;
   gap: 10px;
+}
+.contact .contact__map__info p:first-of-type {
+  margin-top: 10px;
 }
 .contact .contact__form__title {
   margin: 20px 0;
