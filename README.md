@@ -1,6 +1,5 @@
 <h1 align="center">Welcome to Valle del Malbec Winery</h1>
-![BodegaValledelMalbec](https://github.com/user-attachments/assets/e382416d-6194-4922-a14a-c83e0892e873)
-
+<img src="./assets/img/ValleDelMalbecReadme.webp" alt="Imagen Valle Del Malbec README"/>
 
 
 <h2 align="center">Hi 👋, I'm Jero Dominik</h2>
